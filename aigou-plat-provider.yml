@@ -4,7 +4,7 @@ spring:
     - dev
 ---
 spring:
-  profiles: dev #开发环境
+  profiles: dev 
   application:
     name: AIGOU_PLAT
 eureka:
@@ -12,20 +12,20 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka
   instance:
-    prefer-ip-address: true #使用ip注册到注册中心
+    prefer-ip-address: true 
 server:
   port: 8899
 
 ---
 spring:
-  profiles: test #测试环境
+  profiles: test 
   application: 
-    name: AIGOU_PLAT #服务名字
+    name: AIGOU_PLAT 
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:7001/eureka #注册中心地址 
+      defaultZone: http://127.0.0.1:7001/eureka 
   instance:
-    prefer-ip-address: true #使用ip注册到注册中心
+    prefer-ip-address: true 
 server:
-  port: 9988 #环境切换 端口
+  port: 9988 
